@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Readme File &#8212; open-source-development  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Alice_and_Fedor project" href="functions_doc.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="readme-file">
+<h1>Readme File<a class="headerlink" href="#readme-file" title="Link to this heading">¶</a></h1>
+<section id="open-source-development-culture">
+<h2>Open source development culture<a class="headerlink" href="#open-source-development-culture" title="Link to this heading">¶</a></h2>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="functions_doc.html">Alice_and_Fedor project</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="functions_doc.html#module-Alice_and_Fedor.item_keeper.main">main</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="functions_doc.html#testingmocks-project">TestingMocks project</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="functions_doc.html#id1">main</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions_doc.html#module-TestingMocks.app.models">models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions_doc.html#module-TestingMocks.app.parse_csv">parse_csv</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions_doc.html#module-TestingMocks.app.schemas">schemas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions_doc.html#module-TestingMocks.app.routes.files">routes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions_doc.html#tests">tests</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="alice-and-fedor-project">
+<h2>Alice_and_Fedor Project<a class="headerlink" href="#alice-and-fedor-project" title="Link to this heading">¶</a></h2>
+<section id="item-keeper">
+<h3>Item keeper<a class="headerlink" href="#item-keeper" title="Link to this heading">¶</a></h3>
+<p>Keep and returns items to user</p>
+</section>
+</section>
+<section id="testingmocks-project">
+<h2>TestingMocks Project<a class="headerlink" href="#testingmocks-project" title="Link to this heading">¶</a></h2>
+<section id="testingmocks">
+<h3>TestingMocks<a class="headerlink" href="#testingmocks" title="Link to this heading">¶</a></h3>
+<p>Часто бывает что для проверки функциональности не достаточно просто протестировать отдельные функции библиотеки. Хотя это обязательная часть, но не всегда достаточная. Например если мы разрабатываем библиотеку и REST-API приложение, которое использует библиотеку и предоставляет пользователю результаты обработки его данные. Тестирование библиотеки хорошо реализуется с помощью таких инструментов как pytest и unittest. Но даже при идеально работающей библиотеке, мы можем получить дополнительные ошибки в самом приложении и нужно протестировать не только функциональность самой библиотеки, но и код, который обеспечивает передачу данных от пользователя в библиотеку.</p>
+<p>Тестирование должно оставаться как можно ближе к реальному использованию - для тестирования библиотеки, мы вызываем функции из этой библиотеки. Соответственно, чтобы протестировать сервер, нужно сделать запросы к этому серверу, примерно так же как это делает пользователь.</p>
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">open-source-development</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="functions_doc.html">Alice_and_Fedor project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_doc.html#testingmocks-project">TestingMocks project</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+      <li>Next: <a href="functions_doc.html" title="next chapter">Alice_and_Fedor project</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, artem.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

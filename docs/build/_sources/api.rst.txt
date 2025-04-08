@@ -1,0 +1,49 @@
+API Reference
+=============
+
+.. automodule:: Alice_and_Fedor.item_keeper.main
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: TestingMocks.app.main
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: TestingMocks.app.models
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+.. automodule:: TestingMocks.app.parse_csv
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+.. automodule:: TestingMocks.app.schemas
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: TestingMocks.app.routes.files
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: TestingMocks.app.routes.users
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: TestingMocks.tests.test_client
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: TestingMocks.tests.test_server
+   :members:
+   :undoc-members:
+   :show-inheritance:

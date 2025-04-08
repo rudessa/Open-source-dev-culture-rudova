@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Alice_and_Fedor project &#8212; open-source-development  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Readme File" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="alice-and-fedor-project">
+<h1>Alice_and_Fedor project<a class="headerlink" href="#alice-and-fedor-project" title="Link to this heading">¶</a></h1>
+<section id="module-Alice_and_Fedor.item_keeper.main">
+<span id="main"></span><h2>main<a class="headerlink" href="#module-Alice_and_Fedor.item_keeper.main" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="Alice_and_Fedor.item_keeper.main.get_items">
+<span class="sig-prename descclassname"><span class="pre">Alice_and_Fedor.item_keeper.main.</span></span><span class="sig-name descname"><span class="pre">get_items</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">skip</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Query(0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Query(10)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Alice_and_Fedor.item_keeper.main.get_items" title="Link to this definition">¶</a></dt>
+<dd><p>Retrieves a list of items with pagination support.</p>
+<p>This function returns a subset of available items based on the specified 
+skip and limit values. It allows fetching a paginated list of items to 
+optimize data retrieval.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><p>skip (int, optional): The number of initial items to skip. Defaults to 0.
+limit (int, optional): The maximum number of items to return. Defaults to 10.</p>
+</dd>
+<dt>Returns:</dt><dd><p>dict: A dictionary containing the paginated list of items.</p>
+</dd>
+<dt>Example:</dt><dd><p>Requesting <cite>get_items(skip=1, limit=2)</cite> would return the second and third items.</p>
+</dd>
+<dt>Raises:</dt><dd><p>No exceptions are explicitly raised in this function.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Alice_and_Fedor.item_keeper.main.read_root">
+<span class="sig-prename descclassname"><span class="pre">Alice_and_Fedor.item_keeper.main.</span></span><span class="sig-name descname"><span class="pre">read_root</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Alice_and_Fedor.item_keeper.main.read_root" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+</section>
+<section id="testingmocks-project">
+<h1>TestingMocks project<a class="headerlink" href="#testingmocks-project" title="Link to this heading">¶</a></h1>
+<section id="id1">
+<h2>main<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<dl class="py function" id="module-TestingMocks.app.main">
+<dt class="sig sig-object py" id="TestingMocks.app.main.root">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">TestingMocks.app.main.</span></span><span class="sig-name descname"><span class="pre">root</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#TestingMocks.app.main.root" title="Link to this definition">¶</a></dt>
+<dd><p>Root endpoint to check if the FastAPI application is running.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>dict: A simple message confirming the API is active.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-TestingMocks.app.models">
+<span id="models"></span><h2>models<a class="headerlink" href="#module-TestingMocks.app.models" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="TestingMocks.app.models.CSVData">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">TestingMocks.app.models.</span></span><span class="sig-name descname"><span class="pre">CSVData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#TestingMocks.app.models.CSVData" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Base</span></code></p>
+<p>Database model representing CSV file data associated with a user.</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><p>id (int): Primary key, unique identifier for each CSV entry.
+user_id (int): Foreign key referencing the <cite>id</cite> column in the <cite>users</cite> table.
+content (str): The content of the CSV file stored as a string.
+user (User): Relationship linking each CSV entry to its associated user.</p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TestingMocks.app.models.CSVData.content">
+<span class="sig-name descname"><span class="pre">content</span></span><a class="headerlink" href="#TestingMocks.app.models.CSVData.content" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TestingMocks.app.models.CSVData.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#TestingMocks.app.models.CSVData.id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TestingMocks.app.models.CSVData.user">
+<span class="sig-name descname"><span class="pre">user</span></span><a class="headerlink" href="#TestingMocks.app.models.CSVData.user" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TestingMocks.app.models.CSVData.user_id">
+<span class="sig-name descname"><span class="pre">user_id</span></span><a class="headerlink" href="#TestingMocks.app.models.CSVData.user_id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="TestingMocks.app.models.User">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">TestingMocks.app.models.</span></span><span class="sig-name descname"><span class="pre">User</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#TestingMocks.app.models.User" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Base</span></code></p>
+<p>Database model representing a user.</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><p>id (int): Primary key, unique identifier for each user.
+username (str): Unique username for the user, indexed for faster lookups.
+password (str): Hashed password for authentication purposes.</p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TestingMocks.app.models.User.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#TestingMocks.app.models.User.id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TestingMocks.app.models.User.password">
+<span class="sig-name descname"><span class="pre">password</span></span><a class="headerlink" href="#TestingMocks.app.models.User.password" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TestingMocks.app.models.User.username">
+<span class="sig-name descname"><span class="pre">username</span></span><a class="headerlink" href="#TestingMocks.app.models.User.username" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-TestingMocks.app.parse_csv">
+<span id="parse-csv"></span><h2>parse_csv<a class="headerlink" href="#module-TestingMocks.app.parse_csv" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="TestingMocks.app.parse_csv.parse_csv">
+<span class="sig-prename descclassname"><span class="pre">TestingMocks.app.parse_csv.</span></span><span class="sig-name descname"><span class="pre">parse_csv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">csv_string</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#TestingMocks.app.parse_csv.parse_csv" title="Link to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Parses a CSV-formatted string into a list of dictionaries.</p>
+<p>This function takes a CSV string, splits it into lines, and processes it into
+a structured format where each row is represented as a dictionary with column
+names as keys.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><p>csv_string (str): The raw CSV content as a string.</p>
+</dd>
+<dt>Returns:</dt><dd><p>list[dict]: A list of dictionaries, where each dictionary represents a row 
+of the CSV file with column headers as keys.</p>
+</dd>
+<dt>Example:</dt><dd><dl class="simple">
+<dt>Input:</dt><dd><p>“name,age,city</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</div></blockquote>
+<p>Alice,25,New York
+Bob,30,Los Angeles”</p>
+<blockquote>
+<div><blockquote>
+<div><dl>
+<dt>Output:</dt><dd><dl class="simple">
+<dt>[</dt><dd><p>{“name”: “Alice”, “age”: “25”, “city”: “New York”},
+{“name”: “Bob”, “age”: “30”, “city”: “Los Angeles”}</p>
+</dd>
+</dl>
+<p>]</p>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="simple">
+<dt>Raises:</dt><dd><p>No explicit exceptions are raised, but malformed CSV input may cause unexpected behavior.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+</section>
+<section id="module-TestingMocks.app.schemas">
+<span id="schemas"></span><h2>schemas<a class="headerlink" href="#module-TestingMocks.app.schemas" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="TestingMocks.app.schemas.CSVDataResponse">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">TestingMocks.app.schemas.</span></span><span class="sig-name descname"><span class="pre">CSVDataResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">content</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#TestingMocks.app.schemas.CSVDataResponse" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Schema for returning CSV data associated with a user.</p>
+<p>This model is used as a response format when retrieving CSV data, ensuring 
+consistency in the API response.</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><p>user_id (int): The ID of the user to whom the CSV data belongs.
+content (str): The CSV file content stored as a string.</p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TestingMocks.app.schemas.CSVDataResponse.content">
+<span class="sig-name descname"><span class="pre">content</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#TestingMocks.app.schemas.CSVDataResponse.content" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TestingMocks.app.schemas.CSVDataResponse.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar</span><span class="p"><span class="pre">[</span></span><span class="pre">ConfigDict</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#TestingMocks.app.schemas.CSVDataResponse.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TestingMocks.app.schemas.CSVDataResponse.user_id">
+<span class="sig-name descname"><span class="pre">user_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#TestingMocks.app.schemas.CSVDataResponse.user_id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="TestingMocks.app.schemas.UserCreate">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">TestingMocks.app.schemas.</span></span><span class="sig-name descname"><span class="pre">UserCreate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">username</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#TestingMocks.app.schemas.UserCreate" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Schema for creating a new user.</p>
+<p>This model is used for user registration, ensuring that the required fields 
+are provided and conform to expected data types.</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><p>username (str): The unique username of the user.
+password (str): The password for the user account.</p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TestingMocks.app.schemas.UserCreate.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar</span><span class="p"><span class="pre">[</span></span><span class="pre">ConfigDict</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#TestingMocks.app.schemas.UserCreate.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TestingMocks.app.schemas.UserCreate.password">
+<span class="sig-name descname"><span class="pre">password</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#TestingMocks.app.schemas.UserCreate.password" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TestingMocks.app.schemas.UserCreate.username">
+<span class="sig-name descname"><span class="pre">username</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#TestingMocks.app.schemas.UserCreate.username" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-TestingMocks.app.routes.files">
+<span id="routes"></span><h2>routes<a class="headerlink" href="#module-TestingMocks.app.routes.files" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="TestingMocks.app.routes.files.get_db">
+<span class="sig-prename descclassname"><span class="pre">TestingMocks.app.routes.files.</span></span><span class="sig-name descname"><span class="pre">get_db</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#TestingMocks.app.routes.files.get_db" title="Link to this definition">¶</a></dt>
+<dd><p>Dependency to get a database session.</p>
+<dl class="simple">
+<dt>Yields:</dt><dd><p>Session: SQLAlchemy database session.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="TestingMocks.app.routes.files.get_json">
+<span class="sig-prename descclassname"><span class="pre">TestingMocks.app.routes.files.</span></span><span class="sig-name descname"><span class="pre">get_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#TestingMocks.app.routes.files.get_json" title="Link to this definition">¶</a></dt>
+<dd><p>Endpoint to process a CSV string and return parsed JSON data.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>string (str): The CSV string to be parsed.</p>
+</dd>
+<dt>Returns:</dt><dd><p>dict: Parsed JSON representation of the CSV string.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="TestingMocks.app.routes.files.upload_file">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">TestingMocks.app.routes.files.</span></span><span class="sig-name descname"><span class="pre">upload_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">UploadFile</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">File(PydanticUndefined)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_db)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#TestingMocks.app.routes.files.upload_file" title="Link to this definition">¶</a></dt>
+<dd><p>Endpoint to upload a CSV file and store its content in the database.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>user_id (int): ID of the user uploading the file.
+file (UploadFile): The uploaded CSV file.
+db (Session): Database session dependency.</p>
+</dd>
+<dt>Returns:</dt><dd><p>dict: Confirmation message of successful upload.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function" id="module-TestingMocks.app.routes.users">
+<dt class="sig sig-object py" id="TestingMocks.app.routes.users.get_db">
+<span class="sig-prename descclassname"><span class="pre">TestingMocks.app.routes.users.</span></span><span class="sig-name descname"><span class="pre">get_db</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#TestingMocks.app.routes.users.get_db" title="Link to this definition">¶</a></dt>
+<dd><p>Dependency to get a database session.</p>
+<dl class="simple">
+<dt>Yields:</dt><dd><p>Session: SQLAlchemy database session.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="TestingMocks.app.routes.users.get_user_data">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">TestingMocks.app.routes.users.</span></span><span class="sig-name descname"><span class="pre">get_user_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_db)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#TestingMocks.app.routes.users.get_user_data" title="Link to this definition">¶</a></dt>
+<dd><p>Endpoint to retrieve all CSV data entries associated with a specific user.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>user_id (int): ID of the user whose data is being retrieved.
+db (Session): Database session dependency.</p>
+</dd>
+<dt>Raises:</dt><dd><p>HTTPException: If the user is not found.</p>
+</dd>
+<dt>Returns:</dt><dd><p>list[dict[str, str]]: List of CSV data entries containing ID and content.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="TestingMocks.app.routes.users.get_users">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">TestingMocks.app.routes.users.</span></span><span class="sig-name descname"><span class="pre">get_users</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_db)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#TestingMocks.app.routes.users.get_users" title="Link to this definition">¶</a></dt>
+<dd><p>Endpoint to retrieve a list of all registered users.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>db (Session): Database session dependency.</p>
+</dd>
+<dt>Returns:</dt><dd><p>list[dict[str, str]]: List of user dictionaries containing username and ID.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="TestingMocks.app.routes.users.register_user">
+<span class="sig-prename descclassname"><span class="pre">TestingMocks.app.routes.users.</span></span><span class="sig-name descname"><span class="pre">register_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#TestingMocks.app.schemas.UserCreate" title="TestingMocks.app.schemas.UserCreate"><span class="pre">UserCreate</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_db)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#TestingMocks.app.routes.users.register_user" title="Link to this definition">¶</a></dt>
+<dd><p>Endpoint to register a new user with a hashed password.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>user (UserCreate): User registration data.
+db (Session): Database session dependency.</p>
+</dd>
+<dt>Returns:</dt><dd><p>dict: Confirmation message of successful registration.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="tests">
+<h2>tests<a class="headerlink" href="#tests" title="Link to this heading">¶</a></h2>
+<section id="module-TestingMocks.tests.test_client">
+<span id="client-tests"></span><h3>client tests<a class="headerlink" href="#module-TestingMocks.tests.test_client" title="Link to this heading">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="TestingMocks.tests.test_client.test_get_user_data">
+<span class="sig-prename descclassname"><span class="pre">TestingMocks.tests.test_client.</span></span><span class="sig-name descname"><span class="pre">test_get_user_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#TestingMocks.tests.test_client.test_get_user_data" title="Link to this definition">¶</a></dt>
+<dd><p>Tests fetching CSV data for a specific user.</p>
+<p>This function mocks a GET request to <cite>/users/{user_id}/data</cite> and verifies
+that the response returns a list of data entries associated with the user.</p>
+<dl>
+<dt>Test Steps:</dt><dd><ol class="arabic simple">
+<li><p>Define a test user ID.</p></li>
+<li><p>Mock the API response to return sample CSV data entries.</p></li>
+<li><p>Send a GET request to retrieve the user’s data.</p></li>
+<li><p>Assert that the response status is 200 (OK).</p></li>
+<li><p>Verify that the response contains a list of dictionaries with <cite>id</cite> and <cite>content</cite>.</p></li>
+</ol>
+</dd>
+<dt>Expected API Response:</dt><dd><dl class="simple">
+<dt>[</dt><dd><p>{“id”: 1, “content”: “data1”},
+{“id”: 2, “content”: “data2”}</p>
+</dd>
+</dl>
+<p>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="TestingMocks.tests.test_client.test_get_users">
+<span class="sig-prename descclassname"><span class="pre">TestingMocks.tests.test_client.</span></span><span class="sig-name descname"><span class="pre">test_get_users</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#TestingMocks.tests.test_client.test_get_users" title="Link to this definition">¶</a></dt>
+<dd><p>Tests fetching the list of users.</p>
+<p>This function mocks a GET request to <cite>/users</cite> and verifies that the response
+returns a list of user objects with the expected structure.</p>
+<dl>
+<dt>Test Steps:</dt><dd><ol class="arabic simple">
+<li><p>Mock the API response to return a predefined list of users.</p></li>
+<li><p>Send a GET request to retrieve the list of users.</p></li>
+<li><p>Assert that the response status is 200 (OK).</p></li>
+<li><p>Verify that the response contains a list of dictionaries with <cite>id</cite> and <cite>username</cite>.</p></li>
+</ol>
+</dd>
+<dt>Expected API Response:</dt><dd><dl class="simple">
+<dt>[</dt><dd><p>{“id”: 1, “username”: “user1”},
+{“id”: 2, “username”: “user2”}</p>
+</dd>
+</dl>
+<p>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="TestingMocks.tests.test_client.test_register">
+<span class="sig-prename descclassname"><span class="pre">TestingMocks.tests.test_client.</span></span><span class="sig-name descname"><span class="pre">test_register</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#TestingMocks.tests.test_client.test_register" title="Link to this definition">¶</a></dt>
+<dd><p>Tests the user registration endpoint.</p>
+<p>This function mocks a POST request to <cite>/users/register</cite> and verifies
+that the response contains the expected success message.</p>
+<dl class="simple">
+<dt>Test Steps:</dt><dd><ol class="arabic simple">
+<li><p>Mock the API response to return a success message.</p></li>
+<li><p>Send a POST request with test user credentials.</p></li>
+<li><p>Assert that the response message matches the expected output.</p></li>
+</ol>
+</dd>
+<dt>Expected API Response:</dt><dd><p>{“message”: “User registered successfully”}</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="TestingMocks.tests.test_client.test_upload">
+<span class="sig-prename descclassname"><span class="pre">TestingMocks.tests.test_client.</span></span><span class="sig-name descname"><span class="pre">test_upload</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#TestingMocks.tests.test_client.test_upload" title="Link to this definition">¶</a></dt>
+<dd><p>Tests the file upload endpoint.</p>
+<p>This function creates a temporary CSV file, mocks a POST request to <cite>/files/upload</cite>,
+and verifies that the response confirms a successful upload.</p>
+<dl class="simple">
+<dt>Test Steps:</dt><dd><ol class="arabic simple">
+<li><p>Mock the API response for a file upload.</p></li>
+<li><p>Create a test CSV file with sample data.</p></li>
+<li><p>Open the file and send a POST request to the <cite>/files/upload</cite> endpoint.</p></li>
+<li><p>Assert that the response message matches the expected output.</p></li>
+</ol>
+</dd>
+<dt>Expected API Response:</dt><dd><p>{“message”: “File uploaded successfully”}</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-TestingMocks.tests.test_server">
+<span id="server-tests"></span><h3>server tests<a class="headerlink" href="#module-TestingMocks.tests.test_server" title="Link to this heading">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="TestingMocks.tests.test_server.test_get_user_data">
+<span class="sig-prename descclassname"><span class="pre">TestingMocks.tests.test_server.</span></span><span class="sig-name descname"><span class="pre">test_get_user_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#TestingMocks.tests.test_server.test_get_user_data" title="Link to this definition">¶</a></dt>
+<dd><p>Tests retrieving CSV data associated with a user.</p>
+<p>This function sends a GET request to <cite>/users/{user_id}/data</cite>
+and verifies that the response contains valid data entries.</p>
+<dl>
+<dt>Test Steps:</dt><dd><ol class="arabic simple">
+<li><p>Define a test user ID.</p></li>
+<li><p>Send a GET request to retrieve data for the specified user.</p></li>
+<li><p>Assert that the response status code is 200.</p></li>
+<li><p>Verify that the response is a list of data entries.</p></li>
+<li><p>Ensure each data entry contains <cite>id</cite> and <cite>content</cite>.</p></li>
+</ol>
+</dd>
+<dt>Expected API Response:</dt><dd><dl class="simple">
+<dt>[</dt><dd><p>{“id”: 1, “content”: “data1”},
+{“id”: 2, “content”: “data2”}</p>
+</dd>
+</dl>
+<p>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="TestingMocks.tests.test_server.test_get_users">
+<span class="sig-prename descclassname"><span class="pre">TestingMocks.tests.test_server.</span></span><span class="sig-name descname"><span class="pre">test_get_users</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#TestingMocks.tests.test_server.test_get_users" title="Link to this definition">¶</a></dt>
+<dd><p>Tests retrieving the list of users.</p>
+<p>This function sends a GET request to <cite>/users</cite> and verifies that
+the response contains a valid list of users.</p>
+<dl>
+<dt>Test Steps:</dt><dd><ol class="arabic simple">
+<li><p>Send a GET request to fetch all users.</p></li>
+<li><p>Assert that the response status code is 200.</p></li>
+<li><p>Verify that the response is a list of user objects.</p></li>
+<li><p>Ensure each user object contains <cite>id</cite> and <cite>username</cite>.</p></li>
+</ol>
+</dd>
+<dt>Expected API Response:</dt><dd><dl class="simple">
+<dt>[</dt><dd><p>{“id”: 1, “username”: “user1”},
+{“id”: 2, “username”: “user2”}</p>
+</dd>
+</dl>
+<p>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="TestingMocks.tests.test_server.test_register_user">
+<span class="sig-prename descclassname"><span class="pre">TestingMocks.tests.test_server.</span></span><span class="sig-name descname"><span class="pre">test_register_user</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#TestingMocks.tests.test_server.test_register_user" title="Link to this definition">¶</a></dt>
+<dd><p>Tests the user registration endpoint.</p>
+<p>This function ensures that a user can be registered successfully 
+by sending a POST request to <cite>/users/register</cite>.</p>
+<dl class="simple">
+<dt>Test Steps:</dt><dd><ol class="arabic simple">
+<li><p>Connect to the test database.</p></li>
+<li><p>Check if a user with the test username exists and delete them if necessary.</p></li>
+<li><p>Send a registration request with test credentials.</p></li>
+<li><p>Assert that the response status code is 200.</p></li>
+<li><p>Verify that the response contains the expected success message.</p></li>
+</ol>
+</dd>
+<dt>Expected API Response:</dt><dd><p>{“message”: “User registered successfully”}</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="TestingMocks.tests.test_server.test_upload_file">
+<span class="sig-prename descclassname"><span class="pre">TestingMocks.tests.test_server.</span></span><span class="sig-name descname"><span class="pre">test_upload_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#TestingMocks.tests.test_server.test_upload_file" title="Link to this definition">¶</a></dt>
+<dd><p>Tests the file upload endpoint.</p>
+<p>This function verifies that a CSV file can be uploaded successfully
+to the <cite>/files/upload</cite> endpoint.</p>
+<dl class="simple">
+<dt>Test Steps:</dt><dd><ol class="arabic simple">
+<li><p>Create an in-memory CSV file.</p></li>
+<li><p>Send a POST request to upload the file with a <cite>user_id</cite> parameter.</p></li>
+<li><p>Assert that the response status code is 200.</p></li>
+<li><p>Verify that the response contains the expected success message.</p></li>
+</ol>
+</dd>
+<dt>Expected API Response:</dt><dd><p>{“message”: “File uploaded successfully”}</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">open-source-development</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Documentation:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Alice_and_Fedor project</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-Alice_and_Fedor.item_keeper.main">main</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#testingmocks-project">TestingMocks project</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">main</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-TestingMocks.app.models">models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-TestingMocks.app.parse_csv">parse_csv</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-TestingMocks.app.schemas">schemas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-TestingMocks.app.routes.files">routes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tests">tests</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Readme File</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, artem.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/functions_doc.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
